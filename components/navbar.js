@@ -25,7 +25,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         <NextLink href={href}>
             <Link
             p={2}
-            bg={active ? 'glassTeal' : undefined}
+            bg={active ? 'grassTeal' : undefined}
             color={active ? '#202023' : inactiveColor}
             _target={_target}
             {...props}
@@ -82,7 +82,7 @@ const Navbar = props => {
                     </LinkItem>
                     <LinkItem 
                     _target="_blank"
-                    href="https://github.com/Caweca105"
+                    href="https://github.com/Caweca105/portfolio"
                     path={path}
                     display="inline-flex"
                     align="center"
@@ -93,6 +93,7 @@ const Navbar = props => {
                         Source
                     </LinkItem>
                 </Stack>
+
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md:'none'}}>
@@ -115,7 +116,7 @@ const Navbar = props => {
                                 </NextLink>
                                     <MenuItem 
                                         as={Link} 
-                                        href="https://github.com/Caweca105"
+                                        href="https://github.com/Caweca105/portfolio"
                                     >
                                         View Source
                                     </MenuItem>

@@ -28,7 +28,7 @@ export default function Form() {
     <Layout>
       <Section delay={0.1}>
         <Container>
-          <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', 'whiteAlpha.200')} p={3} mb={6} align="center" >
+          <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center" >
                     If you wish to contact me, use the form below please
           </Box>
 

@@ -63,7 +63,7 @@ const Home = () => (
             Introduction
         </Heading>
         <Paragraph>
-            Diogo is a freelance and a full-stack developer based in Lisbon, Portugal, with a passion for coding and curious about new technologies. He enjoys to find bugs and to frustrate with code, he likes to tackle problems and spend some time trying to understand what is causing them. He is curious about cybersecurity and tries to further is knowledge in it when there's time for it. When not online, he loves hanging out with friends, gaming (RPG and strategy fan), watch japanese animation, to travel and he is obsessed towards Pokemon, on a unhealthy scale. The technologies that he usually uses are Javasript, React.js, Next.js, MongoDB and Express.js. Although all of this, he is not shy of a new challenge and to look for new things that may awake his passion for this area.
+            Diogo is a freelance and a full-stack developer based in Lisbon, Portugal, with a passion for coding and curious about new technologies. He enjoys to find bugs and to frustrate with code, he likes to tackle problems and spend some time trying to understand what is causing them. He is curious about cybersecurity and tries to further his knowledge in it when there's time for it. When not online, he loves hanging out with friends, gaming (RPG and strategy fan), watch japanese animation, to travel and he is obsessed towards Pokemon, on a unhealthy scale. The technologies that he usually uses are Javascript, React.js, Next.js, MongoDB and Express.js. Although all of this, he is not shy of a new challenge and to look for new things that may awake his passion for this area.
         </Paragraph>
         <Box align="center" my={4}>
             <NextLink href="/projects">

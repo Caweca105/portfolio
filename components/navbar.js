@@ -14,7 +14,7 @@ import {
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -22,7 +22,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return(
-        <NextLink href={href}>
+        <NextLink href={href} passHref>
             <Link
             p={2}
             bg={active ? 'grassTeal' : undefined}
@@ -80,14 +80,14 @@ const Navbar = props => {
                     <LinkItem href="/contacts" path={path}>
                         Contacts
                     </LinkItem>
-                    <LinkItem 
-                    _target="_blank"
-                    href="https://github.com/Caweca105/portfolio"
-                    path={path}
-                    display="inline-flex"
-                    alignItems="center"
-                    style={{ gap: 4 }}
-                    pl={2}
+                    <LinkItem
+                        _target="_blank"
+                        href="https://github.com/Caweca105/portfolio"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
                     >
                         <IoLogoGithub />
                         Source

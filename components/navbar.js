@@ -85,7 +85,7 @@ const Navbar = props => {
                     href="https://github.com/Caweca105/portfolio"
                     path={path}
                     display="inline-flex"
-                    align="center"
+                    alignItems="center"
                     style={{ gap: 4 }}
                     pl={2}
                     >

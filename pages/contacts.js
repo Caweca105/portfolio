@@ -19,6 +19,25 @@ export default function Form() {
   const [success, setSuccess] = useState(false)
   const toast = useToast()
 
+  talkForm.addEventListener('submit', e => {
+    e.preventDefault()
+
+    const formData = new FormData(talkForm)
+    fetch(talkForm.getAttribute('action'), {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/x-www-form-urlencoded;charset-UTF-8',
+        'Content-Type': 'application/x-www-form-urlenc;charset-UTF-8'
+      },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(res => {
+      if (res) {
+        alert('worked')
+      }
+    })
+  })
+
   useEffect(() => {
     if (window.location.search.includes('success=true')) {
       setSuccess(true)
@@ -44,7 +63,6 @@ export default function Form() {
         data-netlify="true" 
         name="contact-form" 
         method="POST" 
-        action="/"
         >
 
         <input type='hidden' 

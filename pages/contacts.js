@@ -40,7 +40,7 @@ export default function Form() {
       </Section>
         <Section delay={0.3}>
         <Container>
-        <form name='contact-form' method='POST' action='/contact/success'
+        <form name='contact-form' method='POST' action='/contact/'
         enctype='application/x-www-form-urlencoded'
         >
         <input type='hidden' 

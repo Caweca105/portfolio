@@ -25,6 +25,25 @@ export default function Form() {
     }
   }, [])
 
+  function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name
+    })
+  }).then(() => navigate("/thank-you/")).catch(error => alert(error))
+}
+
+
   return (
     <Layout>
       <Section delay={0.1}>
@@ -40,14 +59,13 @@ export default function Form() {
       </Section>
         <Section delay={0.3}>
         <Container>
-        <form name='contact-form' 
-        method='POST' 
-        data-netlify="true"
-        action="/toast?success=true"
-        enctype='application/x-www-form-urlencoded'
-        >
+        <form 
+        data-netlify="true" 
+        name="contact-form" 
+        method="post" 
+        onSubmit={handleSubmit}>
         <input type='hidden' 
-        name='form-name'
+        name='contact-form'
         value='contact-form' 
         />
 

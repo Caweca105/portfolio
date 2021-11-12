@@ -18,29 +18,6 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 export default function Form() {
   const [success, setSuccess] = useState(false)
   const toast = useToast()
-  let talkForm = document.querySelector("#contact form")
-
-  talkForm.addEventListener('submit', e => {
-    e.preventDefault()
-
-    const formData = new FormData(talkForm)
-    fetch(talkForm.getAttribute('action'), {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/x-www-form-urlencoded;charset-UTF-8',
-        'Content-Type': 'application/x-www-form-urlenc;charset-UTF-8'
-      },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(res => {
-      if (res) {
-        M.toast({
-          html: 'Thank you for your submission!',
-          classes: 'pulse'
-        })
-      }
-    })
-  })
 
   useEffect(() => {
     if (window.location.search.includes('success=true')) {

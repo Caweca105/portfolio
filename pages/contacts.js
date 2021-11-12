@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Section from '../components/section'
+import Layout from '../components/layouts/article'
 import {
   Container,
   Heading,
@@ -13,8 +14,6 @@ import {
   useToast
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import Layout from '../components/layouts/article'
-import ToastForm from '../components/toast'
 
 export default function Form() {
   const [success, setSuccess] = useState(false)
@@ -41,8 +40,7 @@ export default function Form() {
       </Section>
         <Section delay={0.3}>
         <Container>
-              <form name="contact" method="POST" action="/?success=true" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+              <form name="contact" method="POST" action="contact/?success=true" data-netlify="true">
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
                   <FormControl id="name" isRequired>

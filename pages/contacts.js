@@ -49,7 +49,7 @@ export default function Form() {
         data-netlify="true"
         action="/toast"
         enctype='application/x-www-form-urlencoded'
-        onSubmit={handleSubmit}
+        onSubmit={this.handleSubmit}
         >
         <input type='hidden' 
         name='form-name'

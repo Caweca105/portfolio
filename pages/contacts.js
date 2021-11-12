@@ -44,6 +44,7 @@ export default function Form() {
         data-netlify="true" 
         name="contact-form" 
         method="POST" 
+        action="/"
         >
 
         <input type='hidden' 

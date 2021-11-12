@@ -25,10 +25,6 @@ export default function Form() {
     }
   }, [])
 
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
-
   return (
     <Layout>
       <Section delay={0.1}>
@@ -47,9 +43,8 @@ export default function Form() {
         <form name='contact-form' 
         method='POST' 
         data-netlify="true"
-        action="/toast"
+        action="/?success=true"
         enctype='application/x-www-form-urlencoded'
-        onSubmit={this.handleSubmit}
         >
         <input type='hidden' 
         name='form-name'
@@ -109,6 +104,7 @@ export default function Form() {
                     >
                       Submit
                     </Button>
+                    {success && toast}
                   </Container>
               </form>
         </Container>

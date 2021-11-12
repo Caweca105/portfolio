@@ -1,5 +1,6 @@
-import Logo from './logo';
-import NextLink from 'next/link';
+import Logo from './logo'
+import React from 'react'
+import NextLink from 'next/link'
 import {
     Container,
     Box,
@@ -8,13 +9,17 @@ import {
     Heading,
     Flex,
     Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
-    useColorModeValue
-} from '@chakra-ui/react';
-import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+    Button,
+    useColorModeValue,
+    useDisclosure,
+    Drawer,
+    DrawerBody,
+    DrawerContent,
+    DrawerOverlay,
+    DrawerCloseButton,
+    DrawerHeader,
+} from '@chakra-ui/react'
+import { HamburgerIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -38,6 +43,8 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
     const { path } = props
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
 
     return (
         <Box
@@ -98,29 +105,68 @@ const Navbar = props => {
                     <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md:'none'}}>
                         <Menu isLazy id="navbar-menu">
-                            <MenuButton 
-                                as={IconButton} 
-                                icon ={<HamburgerIcon />} 
-                                variant="outline" 
-                                aria-label="Options"
-                            />
-                            <MenuList>
-                                <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link}>Projects</MenuItem>
-                                </NextLink>
-                                <NextLink href="/about" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/contacts" passHref>
-                                    <MenuItem as={Link}>Contact Me</MenuItem>
-                                </NextLink>
-                                    <MenuItem 
-                                        as={Link} 
-                                        href="https://github.com/Caweca105/portfolio"
+                        <HamburgerIcon 
+                        ref={btnRef} 
+                        colorScheme="teal" 
+                        onClick={onOpen} 
+                        />
+                        <Drawer
+                        isOpen={isOpen}
+                        placement="right"
+                        onClose={onClose}
+                        finalFocusRef={btnRef}
+                        >
+                            <DrawerOverlay />
+                            <DrawerContent>
+                            <DrawerCloseButton />
+                            <DrawerHeader>Where do you want to go?</DrawerHeader>
+
+                                <DrawerBody align="center">
+                                <Box align="center" my={10} onClick={onClose}>
+                                    <NextLink href="/" passHref>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            Home
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+                                <Box align="center" my={10} onClick={onClose}>
+                                    <NextLink href="/projects" passHref>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            Projects
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+                                <Box align="center" my={10} onClick={onClose}>
+                                    <NextLink href="/about" passHref>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            About
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+                                <Box align="center" my={10} onClick={onClose}>
+                                    <NextLink href="/contacts" passHref>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            Contacts
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+                                <Box align="center" my={10}>
+                                    <NextLink
+                                    align="center"
+                                    as={Link}
+                                    href='https://github.com/Caweca105/portfolio'
                                     >
-                                        View Source
-                                    </MenuItem>
-                            </MenuList>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            <IoLogoGithub />
+                                                View Source
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+
+                                </DrawerBody>
+
+                                </DrawerContent>
+                            </Drawer>
                         </Menu>
                     </Box>
                 </Box>

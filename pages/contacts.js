@@ -17,6 +17,7 @@ import ToastForm from '../components/toast'
 
 export default function Form() {
   const [success, setSuccess] = useState(false)
+  const toast = useToast()
 
   useEffect(() => {
     if (window.location.search.includes('success=true')) {
@@ -85,6 +86,15 @@ export default function Form() {
                       type="Submit" 
                       rightIcon={<ChevronRightIcon />}
                       colorScheme="teal"
+                      onClick={() => 
+                        toast({
+                          title: "Form sent",
+                          description: "I've received your contact form. I'll reach out as soon as possible. Thank you",
+                          status: "success",
+                          duration: 9000,
+                          isClosable: true,
+                        })
+                      }
                     >
                       Submit
                     </Button>

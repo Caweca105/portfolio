@@ -18,6 +18,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 export default function Form() {
   const [success, setSuccess] = useState(false)
   const toast = useToast()
+  let talkForm = document.querySelector("#contact form")
 
   talkForm.addEventListener('submit', e => {
     e.preventDefault()

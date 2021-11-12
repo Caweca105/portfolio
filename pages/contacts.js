@@ -42,7 +42,7 @@ export default function Form() {
         <Container>
         <form name='contact-form' 
         method='POST' 
-        data-netlify="true">
+        data-netlify='true'>
           <input type='hidden' 
           name='contact-form'
           value='contact-form' />

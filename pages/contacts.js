@@ -31,19 +31,6 @@ export default function Form() {
         .join("&")
   }
 
-const handleSubmit = (event) => {
-  event.preventDefault()
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({
-      "contact-form": event.target.getAttribute("name"),
-      ...name
-    })
-  }).then(() => navigate("/contacts/")).catch(error => alert(error))
-}
-
-
   return (
     <Layout>
       <Section delay={0.1}>
@@ -62,9 +49,9 @@ const handleSubmit = (event) => {
         <form 
         data-netlify="true" 
         name="contact-form" 
-        method="post" 
-        onSubmit={handleSubmit}>
-          
+        method="POST" 
+        >
+
         <input type='hidden' 
         name='contact-form'
         value='contact-form' 

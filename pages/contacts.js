@@ -43,7 +43,7 @@ export default function Form() {
         <form name='contact-form' 
         method='POST' 
         data-netlify="true"
-        action="/?success=true"
+        action="/toast?success=true"
         enctype='application/x-www-form-urlencoded'
         >
         <input type='hidden' 

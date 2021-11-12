@@ -38,8 +38,6 @@ export default function Form() {
           </Heading>
         </Container>
       </Section>
-      {success && {ToastForm}}
-
         <Section delay={0.3}>
         <Container>
               <form name="contact" method="POST" action="/?success=true" data-netlify="true">

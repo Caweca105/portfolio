@@ -40,17 +40,10 @@ export default function Form() {
       </Section>
         <Section delay={0.3}>
         <Container>
-        <form 
-        data-netlify="true" 
-        name="contact" 
-        method="POST" 
-        action="/#contacts"
-        >
-
-        <input type='hidden' 
-        name='contact'
-        value='contact' 
-        />
+        <form name='contact-form' method='POST' action='/contact/success'
+        enctype='application/x-www-form-urlencoded'>
+          <input type='hidden' name='form-name'
+          value='contact-form' />
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
                   <FormControl id="name" isRequired>
@@ -105,7 +98,6 @@ export default function Form() {
                     >
                       Submit
                     </Button>
-                    {success && toast}
                   </Container>
               </form>
         </Container>

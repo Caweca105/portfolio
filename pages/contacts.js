@@ -40,7 +40,7 @@ const handleSubmit = (event) => {
       "contact-form": event.target.getAttribute("name"),
       ...name
     })
-  }).then(() => navigate("")).catch(error => alert(error))
+  }).then(() => navigate("/contacts")).catch(error => alert(error))
 }
 
 

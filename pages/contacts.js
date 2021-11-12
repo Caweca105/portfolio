@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { useForm, SubmitHandler } from "react-hook-form"
 import {
   Container,
   Heading,
@@ -13,11 +15,26 @@ import {
   Input,
   useToast
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export default function Form() {
-  const [success, setSuccess] = useState(false)
+  const [state, setSuccess] = useState<FormPost>()
   const toast = useToast()
+
+  const onSubmit: SubmitHandler<FormPost> = data => {
+    fetch("/", {
+      method:"POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": contact, ...state})
+    })
+
+    .then(() => console.log("Success!"))
+    .catch(error => console.log(error))
+
+    event.preventDefault
+    setSubmitted(true)
+  }
+
+  const { register, handleSubmit, formState: { errors } } = useForm<FormPost>()
 
   useEffect(() => {
     if (window.location.search.includes('success=true')) {
@@ -44,13 +61,13 @@ export default function Form() {
         data-netlify="true" 
         name="contact-form" 
         method="POST" 
+        onSubmit={ handleSubmit(onSubmit) }
         >
 
         <input type='hidden' 
         name='contact-form'
         value='contact-form' 
         />
-
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
                   <FormControl id="name" isRequired>
                     <FormLabel>Name</FormLabel>

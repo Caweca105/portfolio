@@ -34,7 +34,10 @@ export default function Form() {
     })
     .then(res => {
       if (res) {
-        alert('worked')
+        M.toast({
+          html: 'Thank you for your submission!',
+          classes: 'pulse'
+        })
       }
     })
   })
@@ -62,13 +65,14 @@ export default function Form() {
         <Container>
         <form 
         data-netlify="true" 
-        name="contact-form" 
+        name="contact" 
         method="POST" 
+        action="/#contacts"
         >
 
         <input type='hidden' 
-        name='contact-form'
-        value='contact-form' 
+        name='contact'
+        value='contact' 
         />
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">

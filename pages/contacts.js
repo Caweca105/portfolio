@@ -55,7 +55,6 @@ export default function Form() {
                   <FormControl id="name" isRequired>
                     <FormLabel>Name</FormLabel>
                     <Input 
-                      type="text" 
                       id="name" 
                       name="name" 
                     />
@@ -66,7 +65,6 @@ export default function Form() {
                   <FormControl id="company">
                     <FormLabel>Company</FormLabel>
                     <Input 
-                      type="text" 
                       id="company" 
                       name="company" 
                     />

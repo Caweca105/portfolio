@@ -40,12 +40,16 @@ export default function Form() {
       </Section>
         <Section delay={0.3}>
         <Container>
-        <form name='contact-form' 
-        method='POST' 
-        data-netlify='true'>
-          <input type='hidden' 
-          name='contact-form'
-          value='contact-form' />
+        <form 
+        name="contact"
+        method="POST"
+        data-netlify='true'
+        >
+          <input 
+          type="hidden"
+          name="form-name"
+          value="contact"
+          />
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
                   <FormControl id="name" isRequired>

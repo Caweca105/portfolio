@@ -83,7 +83,7 @@ export default function Form() {
                 </Box>
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
-                  <FormControl id="name" isRequired>
+                  <FormControl id="message" isRequired>
                     <FormLabel>Message</FormLabel>
                     <Textarea 
                       id="message" 

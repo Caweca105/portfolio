@@ -47,6 +47,7 @@ import {
                       <Paragraph>
                       <UnorderedList>
                         <ListItem>Redo my form</ListItem>
+                        <ListItem>Redo the photos showcasing my projects</ListItem>
                         <ListItem>Change the 3D model being currently in use</ListItem>
                         <ListItem>A toast popup to appear when the submission is a success</ListItem>
                         </UnorderedList>

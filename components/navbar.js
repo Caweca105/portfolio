@@ -84,6 +84,9 @@ const Navbar = props => {
                     <LinkItem href="/about" path={path}>
                         About
                     </LinkItem>
+                    <LinkItem href="/next" path={path}>
+                        What's Next?
+                    </LinkItem>
                     <LinkItem href="/contacts" path={path}>
                         Contacts
                     </LinkItem>
@@ -140,6 +143,13 @@ const Navbar = props => {
                                     <NextLink href="/about" passHref>
                                         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                                             About
+                                        </Button>
+                                    </NextLink>
+                                </Box>
+                                <Box align="center" my={10} onClick={onClose}>
+                                    <NextLink href="/next" passHref>
+                                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                            What's Next?
                                         </Button>
                                     </NextLink>
                                 </Box>

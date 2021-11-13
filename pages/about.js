@@ -56,11 +56,11 @@ const About = () => (
                     </Heading>
 
                     <Paragraph>
-                        For 10 weeks I took part in the intensiveprogramming Boot Camp of Bytes4Future. In thisprogram I learned to write JavaScript (ES6) code, Ialso learned the basis of topics such as ObjectOriented Programming, Data Structures,Algorithms, Functional Programming and BasicSoftware Principles.
-                        Starting from the HTML and CSS base acquired inthe PowerUp stage of Bytes4Future, I learned todevelop interfaces using the declarative model,more specifically, using React. I also learned whatRedux is all about.
-                        I learned how to use JavaScript in the backendusing NodeJS to run JavaScript code outside thebrowser. I developed REST APIs using Express andhad my first chance to play with Web Sockets.
-                        To store application data, I learned how to usefiles, most of the time to store JSON objects. Ialso learned to work with MongoDB and learnedthe basics of SQL.
-                        During the development of projects I used Git andGitHub to manage source code versions.
+                        For 10 weeks I took part in the intensive programming Boot Camp of Bytes4Future. In this program I learned to write JavaScript (ES6) code, I also learned the basis of topics such as Object Oriented Programming, Data Structures,Algorithms, Functional Programming and Basic Software Principles.
+                        Starting from the HTML and CSS base acquired in the PowerUp stage of Bytes4Future, I learned to develop interfaces using the declarative model, more specifically, using React. I also learned what Redux is all about.
+                        I learned how to use JavaScript in the back end using NodeJS to run JavaScript code outside the browser. I developed REST APIs using Express and had my first chance to play with Web Sockets.
+                        To store application data, I learned how to use files, most of the time to store JSON objects. I also learned to work with MongoDB and learned the basics of SQL.
+                        During the development of projects I used Git and GitHub to manage source code versions.
                     </Paragraph>
                 </Section>
 

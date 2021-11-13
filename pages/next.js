@@ -3,8 +3,10 @@ import {
     Heading,
     Box,
     UnorderedList,
-    ListItem
+    ListItem,
+    List
   } from '@chakra-ui/react'
+  import { Meta } from '../components/work'
   import Paragraph from '../components/paragraph'
   import Layout from '../components/layouts/article'
   import Section from '../components/section'
@@ -24,8 +26,19 @@ import {
                       </Heading>
 
                       <Paragraph>
-                          I will describe what I want to improve or add to this site, as we should always try to improve and criticize our own work in order to be better each and every day.
+                          I am always trying to improve and to keep myself updated. In order to do so, and to demonstrate it, I decided to write here my ideas to improve my site.  
                       </Paragraph>
+
+                      <Paragraph>
+                          They'll be in an unordered list, so I can keep some flexiblity in this project. If there's any feedback or suggestions, I'll appreciate if you could reach out to me. 
+                      </Paragraph>
+
+                    <List ml={4} my={4}>
+                        <ListItem>
+                        <Meta>Last updated</Meta>
+                        <span>13th, November 2021</span>
+                        </ListItem>
+                    </List>
 
                       <Heading as="h3" variant="section-title">
                           What I want to improve/modify to this site?
@@ -34,8 +47,8 @@ import {
                       <Paragraph>
                       <UnorderedList>
                         <ListItem>Redo my form</ListItem>
-                        <ListItem>A toast popup to appear when the submission is a success</ListItem>
                         <ListItem>Change the 3D model being currently in use</ListItem>
+                        <ListItem>A toast popup to appear when the submission is a success</ListItem>
                         </UnorderedList>
                       </Paragraph>
 
@@ -49,6 +62,7 @@ import {
                         <ListItem>Codecademy projects</ListItem>
                         <ListItem>FreeCodeCamp projects</ListItem>
                         <ListItem>Other projects that I've done</ListItem>
+                        <ListItem>What technologies I am currently using</ListItem>
                         </UnorderedList>
                       </Paragraph>
                   </Section>

@@ -52,11 +52,11 @@ export default function Form() {
           />
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
-                  <FormControl id="name" isRequired>
+                  <FormControl id="person-name" isRequired>
                     <FormLabel>Name</FormLabel>
                     <Input 
-                      id="name" 
-                      name="name" 
+                      id="person-name" 
+                      name="person-name" 
                     />
                   </FormControl>
                 </Box>

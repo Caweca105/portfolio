@@ -64,6 +64,7 @@ import {
                         <ListItem>FreeCodeCamp projects</ListItem>
                         <ListItem>Other projects that I've done</ListItem>
                         <ListItem>What technologies I am currently using</ListItem>
+                        <ListItem>In mobile, when slide right to left, the sidebar/menu will show</ListItem>
                         </UnorderedList>
                       </Paragraph>
                   </Section>

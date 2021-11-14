@@ -27,7 +27,7 @@ import {
 } from 'react-icons/io5'
 
 const Home = () => (
-        <Layout>
+        <Layout title="Home">
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center" >
                 Hello, I&apos;m a full-stack developer based in Portugal

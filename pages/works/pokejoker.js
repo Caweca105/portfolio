@@ -11,7 +11,7 @@ import {
   import P from '../../components/paragraph'
   
   const Project = () => (
-    <Layout title="pokejoker">
+    <Layout title="Pokejoker">
       <Container>
         <Title>
           PokeJoker <Badge>2021</Badge>

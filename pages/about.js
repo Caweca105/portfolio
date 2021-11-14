@@ -8,7 +8,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 const About = () => (
-    <Layout>
+    <Layout title="About me">
         <Container>
             <Box flexgrow={1}>
                 <Heading as="h2" variant="page-title">

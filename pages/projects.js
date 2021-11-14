@@ -7,7 +7,7 @@ import thumbGarconet from '../public/images/projects/garconet-thumbnail.png'
 import thumbPokejoker from '../public/images/projects/pokejoker-thumbnail.png'
 
 const Works = () => (
-  <Layout title="Project">
+  <Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Bytes4Future Projects

@@ -13,7 +13,7 @@ import {
 
   const Next = () => {
     return (
-      <Layout>
+      <Layout title="What's Next?">
           <Container>
               <Box flexgrow={1}>
                   <Heading as="h2" variant="page-title">

@@ -26,7 +26,7 @@ export default function Form() {
   }, [])
 
   return (
-    <Layout>
+    <Layout title="Contacts">
       <Section delay={0.1}>
         <Container>
           <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center" >

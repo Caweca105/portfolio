@@ -133,8 +133,7 @@ const Home = () => (
                 Work
             </Heading>
 
-            <Accordion>
-
+            <Accordion allowToggle allowMultiple>
             <AccordionItem>
                 <Heading as="h2" variant="accordion-bio">
                       <AccordionButton>
@@ -276,7 +275,7 @@ const Home = () => (
             <Heading as="h3" variant="section-title">
                 Certifications
             </Heading>
-          <Accordion>
+          <Accordion allowToggle allowMultiple>
             <AccordionItem>
                 <Heading as="h2" variant="accordion-bio">
                       <AccordionButton>

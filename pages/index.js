@@ -164,7 +164,7 @@ const Home = () => (
                                       <BioYear>
                                           Nov. 2015 to Nov. 2016
                                       </BioYear>
-                                      AutoTranscais
+                                      AutoTranscais as a backoffice worker
                                   </BioSection>
                               </Box>
                           <AccordionIcon />

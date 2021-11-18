@@ -336,7 +336,11 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/Caweca105" target="_blank">
+            <Link 
+            href="https://github.com/Caweca105" 
+            target="_blank"
+            rel="noreferrer"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -347,7 +351,11 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/diogo-lemos-2a9059aa/" target="_blank">
+            <Link 
+            href="https://www.linkedin.com/in/diogo-lemos-2a9059aa/" 
+            target="_blank"
+            rel="noreferrer"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"

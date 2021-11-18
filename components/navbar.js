@@ -92,6 +92,7 @@ const Navbar = props => {
                     </LinkItem>
                     <LinkItem
                         _target="_blank"
+                        rel="noreferrer"
                         href="https://github.com/Caweca105/portfolio"
                         path={path}
                         display="inline-flex"

@@ -55,8 +55,6 @@ const Home = () => (
                         borderRadius="full" 
                         src="/images/diogo.webp" 
                         alt="Profile Image" 
-                        width="80"
-                        height="20"
                     />
                 </Box> 
             </Box>

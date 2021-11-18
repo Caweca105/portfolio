@@ -53,7 +53,7 @@ const Home = () => (
                         maxWidth="100px" 
                         display="inline-block" 
                         borderRadius="full" 
-                        src="/images/diogo.jpg" 
+                        src="/images/diogo.webp" 
                         alt="Profile Image" 
                         width="100%"
                         height="100%"

@@ -29,7 +29,7 @@ import {
 const Home = () => (
         <Layout title="Home">
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center" >
+            <Box borderRadius="lg" bg={useColorModeValue('#00C9A8', '#008080')} color={useColorModeValue('black', 'white')} p={3} mb={6} align="center" >
                 Hello, I&apos;m a full-stack developer based in Portugal
             </Box>
 

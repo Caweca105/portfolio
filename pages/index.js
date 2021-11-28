@@ -103,7 +103,7 @@ const Home = () => (
                       </AccordionButton>
                   </Heading>
                   <AccordionPanel pb={4}>
-                    It was the day when i was born
+                    It was the year when i was born
                   </AccordionPanel>
               </AccordionItem>
 

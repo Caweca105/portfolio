@@ -63,7 +63,7 @@ const About = () => (
                     </Heading>
 
                     <Paragraph>
-                        For 10 weeks I took part in the intensive programming Boot Camp of Bytes4Future. In this program I learned to write JavaScript (ES6) code, I also learned the basis of topics such as Object Oriented Programming, Data Structures,Algorithms, Functional Programming and Basic Software Principles.
+                        For 10 weeks I took part in the intensive programming Boot Camp of Bytes4Future. In this program I learned to write JavaScript (ES6) code, I also learned the basis of topics such as Object Oriented Programming, Data Structures, Algorithms, Functional Programming and Basic Software Principles.
                     </Paragraph>
 
                     <Paragraph>

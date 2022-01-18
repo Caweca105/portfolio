@@ -173,49 +173,8 @@ const About = () => (
                                     </Link> 
                                     for their valuable inputs, that made me improve my site!
                                 </Paragraph>
-                                        </AccordionPanel>
-                                    </AccordionItem>
-
-                                <Heading as="h3" variant="section-title">
-                                    Thank you
-                                </Heading>
-
-                                <Paragraph>
-                                    I want to thank to my dear friend Fernanda, who made the 3D model of Vaporeon at my request. 
-                                    <Link href="https://www.instagram.com/lomiartwork/" target="_blank">
-                                    <Button
-                                        variant="ghost"
-                                        colorScheme="teal"
-                                        leftIcon={<Icon as={IoLogoInstagram} />}
-                                    >
-                                        @lomiartwork
-                                    </Button>
-                                    </Link>
-                                </Paragraph>
-
-                                <Paragraph>
-                                    I would also like to thank 
-                                    <Link href="https://www.linkedin.com/in/daniel-barreiras/" target="_blank">
-                                    <Button
-                                        variant="ghost"
-                                        colorScheme="teal"
-                                        leftIcon={<Icon as={IoLogoLinkedin} />}
-                                    >
-                                        Daniel Barradas
-                                    </Button>
-                                    </Link>
-                                    and 
-                                    <Link href="https://www.linkedin.com/in/ricardojjustino/" target="_blank">
-                                    <Button
-                                        variant="ghost"
-                                        colorScheme="teal"
-                                        leftIcon={<Icon as={IoLogoLinkedin} />}
-                                    >
-                                        Ricardo Justino
-                                    </Button>
-                                    </Link> 
-                                    for their valuable inputs, that made me improve my site!
-                                </Paragraph>
+                            </AccordionPanel>
+                        </AccordionItem>
                 </Section>
                 </Accordion>
             </Box>

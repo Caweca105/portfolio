@@ -26,7 +26,7 @@ import {
                       </Heading>
 
                       <Paragraph>
-                          I am always trying to improve and to keep myself updated. In order to do so, and to demonstrate it, I decided to write here my ideas to improve my site.  
+                          I am always trying to improve and to keep myself updated. In order to do so, and to demonstrate it, I decided to write here my ideas to improve my site.
                       </Paragraph>
 
                       <Paragraph>
@@ -36,7 +36,7 @@ import {
                     <List ml={4} my={4}>
                         <ListItem>
                         <Meta>Last updated</Meta>
-                        <span>21th, November 2021</span>
+                        <span>17th, January 2022</span>
                         </ListItem>
                     </List>
 
@@ -45,7 +45,7 @@ import {
                       </Heading>
                       
                       <Paragraph>
-                      <UnorderedList>
+                      <UnorderedList spacing={2}>
                         <ListItem>Redo my form</ListItem>
                         <ListItem>Redo the photos showcasing my projects</ListItem>
                         <ListItem>A toast popup to appear when the submission is a success</ListItem>
@@ -57,7 +57,7 @@ import {
                       </Heading>
 
                       <Paragraph>
-                      <UnorderedList>
+                      <UnorderedList spacing={2}>
                         <ListItem>A blog</ListItem>
                         <ListItem>Codecademy projects</ListItem>
                         <ListItem>FreeCodeCamp projects</ListItem>

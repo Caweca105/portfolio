@@ -3,11 +3,30 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
+import thumbCurrency from '../public/images/projects/currencyConverter-thumbnail.png'
 import thumbGarconet from '../public/images/projects/garconet-thumbnail.png'
 import thumbPokejoker from '../public/images/projects/pokejoker-thumbnail.png'
 
 const Works = () => (
   <Layout title="Projects">
+    <Container>
+      <Heading as="h3" fontSize={20} mb={4}>
+        Projects
+      </Heading>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+          <WorkGridItem 
+            id="currencyConverter" 
+            title="Currency Converter" 
+            thumbnail={thumbCurrency}
+          >
+            An application that is used to convert currencies from all over the world
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+    </Container>
+
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Bytes4Future Projects

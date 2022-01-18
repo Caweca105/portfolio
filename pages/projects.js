@@ -17,7 +17,7 @@ const Works = () => (
         <Section>
           <WorkGridItem 
             id="garconet" 
-            title="Garconet" 
+            title="Garçonet" 
             thumbnail={thumbGarconet}
           >
             A restaurant application to facilitate communication between the kitchen, the room and the clients.

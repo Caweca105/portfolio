@@ -50,7 +50,8 @@ const Home = () => (
                         borderColor="whiteAlpha.800" 
                         borderWidth={2} 
                         borderStyle="solid" 
-                        maxWidth="100px" 
+                        maxWidth="250px"
+                        maxHeight="150px" 
                         display="inline-block" 
                         borderRadius="full" 
                         src="/images/diogo.webp" 

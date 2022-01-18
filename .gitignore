@@ -4,4 +4,3 @@ dist
 .vercel
 .env
 .vscode/settings.json
-components/baseURL.js

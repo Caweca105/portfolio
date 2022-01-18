@@ -165,6 +165,7 @@ const Navbar = props => {
                                     <Link
                                     href="https://github.com/Caweca105/portfolio"
                                     target="_blank"
+                                    rel="noreferrer"
                                     path={path}
                                     align="center"
                                     >

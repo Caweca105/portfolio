@@ -18,7 +18,7 @@ const CurrencyConverter = () => (
         Currency Converter <Badge>2022</Badge>
       </Title>
       <P>
-        This is a currency real-converter, it fetches an API and 
+        This is a currency real-converter, it fetches an API and converts in real-time the currency intended.
       </P>
       <List ml={4} my={4}>
         <ListItem>

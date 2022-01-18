@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input, Select, Box, useColorModeValue, Container } from '@chakra-ui/react'
 
-export default function CurrencyRow(props) {
+export default function currencyRow(props) {
   const {
     currencyOptions,
     selectedCurrency,

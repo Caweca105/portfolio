@@ -62,16 +62,6 @@ export default function Form() {
                 </Box>
 
                 <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
-                  <FormControl id="company">
-                    <FormLabel>Company</FormLabel>
-                    <Input 
-                      id="company" 
-                      name="company" 
-                    />
-                  </FormControl>
-                </Box>
-
-                <Box borderRadius="lg" bg={useColorModeValue('#94d2bd', '#008080')} p={3} mb={6} align="center">
                   <FormControl id="email" isRequired>
                     <FormLabel>Email adress</FormLabel>
                     <Input 

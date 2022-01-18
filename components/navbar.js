@@ -91,9 +91,9 @@ const Navbar = props => {
                         Contacts
                     </LinkItem>
                     <LinkItem
-                        _target="_blank"
-                        rel="noreferrer"
                         href="https://github.com/Caweca105/portfolio"
+                        target="_blank"
+                        rel="noreferrer"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
@@ -162,16 +162,17 @@ const Navbar = props => {
                                     </NextLink>
                                 </Box>
                                 <Box align="center" my={10}>
-                                    <NextLink
+                                    <Link
+                                    href="https://github.com/Caweca105/portfolio"
+                                    target="_blank"
+                                    path={path}
                                     align="center"
-                                    as={Link}
-                                    href='https://github.com/Caweca105/portfolio'
                                     >
                                         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                                             <IoLogoGithub />
                                                 View Source
                                         </Button>
-                                    </NextLink>
+                                    </Link>
                                 </Box>
 
                                 </DrawerBody>

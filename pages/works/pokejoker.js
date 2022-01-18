@@ -6,11 +6,10 @@ import {
     SimpleGrid,
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
-
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
   
-  const Project = () => (
+  const PokeJoker = () => (
     <Layout title="Pokejoker">
       <Container>
         <Title>
@@ -39,5 +38,5 @@ import {
     </Layout>
   )
   
-  export default Project
+  export default PokeJoker
   

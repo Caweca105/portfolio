@@ -4,4 +4,3 @@ dist
 .vercel
 .env
 .vscode/settings.json
-config.js

@@ -36,7 +36,7 @@ import {
                     <List ml={4} my={4}>
                         <ListItem>
                         <Meta>Last updated</Meta>
-                        <span>18th, January 2022</span>
+                        <span>02th, May 2022</span>
                         </ListItem>
                     </List>
 

@@ -173,6 +173,11 @@ const About = () => (
                                     </Link> 
                                     for their valuable inputs, that made me improve my site!
                                 </Paragraph>
+
+                                <Paragraph>
+                                    I want to mention that you can visit my profile on Zaask by using this link
+                                    <a target="_blank" href="https://www.zaask.pt/user/lemosdiogo10501"><img src="https://www.zaask.pt/widget?user=110&widget=pro-findme" alt="" /></a>
+                                </Paragraph>
                             </AccordionPanel>
                         </AccordionItem>
                 </Section>
